@@ -1,5 +1,10 @@
 {
 	"ImportPath": "github.banksimple.com/joekarl/rmq-cli",
 	"GoVersion": "go1.6.2",
-	"Deps": []
+	"Deps": [
+		{
+			"ImportPath": "github.com/streadway/amqp",
+			"Rev": "6a378341a305bfbc252e8a6638f16cf443221997"
+		}
+	]
 }
