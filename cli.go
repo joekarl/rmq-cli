@@ -273,16 +273,16 @@ func main() {
 
 	if opts.username == "" {
 		opts.username = os.Getenv("RMQ_USERNAME")
-    if opts.username == "" {
-      opts.username = "guest"
-    }
+		if opts.username == "" {
+			opts.username = "guest"
+		}
 	}
 
 	if opts.password == "" {
 		opts.password = os.Getenv("RMQ_PASSWORD")
-    if opts.password == "" {
-      opts.password = "guest"
-    }
+		if opts.password == "" {
+			opts.password = "guest"
+		}
 	}
 
 	if opts.useTls {
