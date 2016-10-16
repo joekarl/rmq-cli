@@ -84,6 +84,9 @@ By default, rmq-cli will separate messages going to STDOUT when consuming and se
 
 ## Administrative
 
+### Prebuilt version
+Go to GH, download latest rmq-cli binary from Releases
+
 ### Building
 To build, first setup your `GOPATH`
 Then either run `go get github.banksimple.com/joekarl/rmq-cli` or clone manually into your `GOPATH`.
