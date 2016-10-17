@@ -89,9 +89,11 @@ Go to GH, download latest rmq-cli binary from Releases
 
 ### Building
 To build, first setup your `GOPATH`
-Then either run `go get github.banksimple.com/joekarl/rmq-cli` or clone manually into your `GOPATH`.
+Then either run `go get github.com/joekarl/rmq-cli` or clone manually into your `GOPATH`.
 
 This project uses godep to manage dependencies, if your dependencies are out of data, run `godep restore` prior to building/running.
+
+Then you can run any of the normal `go build` `go install` etc...
 
 ### Packaging
 Run `go build` to build a binary of this project. Run `go install` to install this in the bin of your `GOPATH`
