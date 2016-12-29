@@ -204,7 +204,7 @@ func consume(opts *ConfigOpts, conn *amqp.Connection) {
 
 			count += 1
 
-			if count >= opts.consumeCount {
+			if opts.consumeCount > -1 && count >= opts.consumeCount {
 				consumeCloseChan <- true
 				break
 			}
