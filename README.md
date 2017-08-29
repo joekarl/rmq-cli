@@ -58,14 +58,14 @@ Consume 50 messages and dump to file
 #### Publish
 Publish messages from file to exchange
 
-`$ cat messages.txt > rmq-cli -publish -exchange=test_exchange`
+`$ cat messages.txt | rmq-cli -publish -exchange=test_exchange`
 
 Publish messages from file to queue
 
-`$ cat messages.txt > rmq-cli -publish -queue=test_queue`
+`$ cat messages.txt | rmq-cli -publish -queue=test_queue`
 
 #### Consume > Publish
-`$ rmq-cli -consume -queue=test_poison_queue -n 50 -requeue=false | mq-cli -publish -queue=test_queue`
+`$ rmq-cli -consume -queue=test_poison_queue -n 50 -requeue=false | rmq-cli -publish -queue=test_queue`
 
 #### Host/username/password
 You can set the rmq host, username, and password using the following cli opts or environment variables
